@@ -19,7 +19,7 @@ def verify(username, password):
     return USER_DATA.get(username) == password
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://rsjpdwpovqvffk:f03eab6898fd67e601adbc7aa14cb97413d71961cb8eace50c36521baa33c6cc@ec2-3-220-222-72.compute-1.amazonaws.com:5432/d65apm2nb3g4vq'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Samsung94.@localhost/flask_api'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
